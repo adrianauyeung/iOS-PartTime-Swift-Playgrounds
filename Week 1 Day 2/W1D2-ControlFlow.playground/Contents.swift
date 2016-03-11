@@ -47,7 +47,15 @@ if someThing == otherThing {
 //:
 //: Now see if you can make an `if`/`else` statement that prints out a grammatically correct description of how many bicycles we have. I.e. "There is 1 bicycle" or "There are 100 bicycles".
 
-bicycleCount = 1
+bicycleCount = 2
+
+if bicycleCount == 1 {
+    print("there is \(bicycleCount) bicycle")
+} else if bicycleCount == 0 {
+    print("Oh no, \(bicycleCount) bicycles")
+} else {
+    print("there are \(bicycleCount) bicycles")
+}
 
 
 
@@ -58,7 +66,13 @@ bicycleCount = 1
 
 bicycleCount = 0
 
-
+if bicycleCount == 1 {
+    print("there is \(bicycleCount) bicycle")
+} else if bicycleCount == 0 {
+    print("Oh no, \(bicycleCount) bicycles")
+} else {
+    print("there are \(bicycleCount) bicycles")
+}
 
 
 
@@ -68,6 +82,11 @@ bicycleCount = 0
 
 var inputString = "Do you like bicycles?"
 
+if inputString.characters.last == "?" {
+    print("I think so")
+} else {
+    print("You don't say!")
+}
 
 
 
